@@ -149,18 +149,30 @@ export function GamesCatalog({ onBack }: GamesCatalogProps) {
           <h3>Zero Knowledge Games</h3>
         </div>
         <div className="zk-grid">
-          <a
-            className="zk-card"
-            href="https://github.com/jamesbachini/typezero/"
-            target="_blank"
-            rel="noreferrer"
-          >
+          <div className="zk-card">
             <div className="zk-card-text">
               <div className="zk-card-title">TypeZero</div>
               <p className="zk-card-description">
                 A typing game built with RISC Zero and Stellar. Requires local setup.
               </p>
-              <div className="zk-card-cta">Open on GitHub</div>
+              <div className="zk-card-links">
+                <a
+                  className="zk-card-link"
+                  href="https://github.com/jamesbachini/typezero/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Open on GitHub
+                </a>
+                <a
+                  className="zk-card-link"
+                  href="https://jamesbachini.com/stellar-risc-zero-games/?dpl_token=20623f91-ba93-4bfb-81b4-d7097ef5811f"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Tutorial
+                </a>
+              </div>
             </div>
             <div className="zk-media">
               <img
@@ -169,7 +181,7 @@ export function GamesCatalog({ onBack }: GamesCatalogProps) {
                 loading="lazy"
               />
             </div>
-          </a>
+          </div>
         </div>
       </section>
     </div>
